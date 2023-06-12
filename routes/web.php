@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index', [GameController::class, "index"]);
-});
+Route::get('/', [GameController::class, 'index'])->name('home');
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+Route::get('/winkel', [GameController::class, 'AllGames'])->name("allgames");
+Route::get('/winkel/uitgave', [GameController::class, 'releaseDate'])->name("release");

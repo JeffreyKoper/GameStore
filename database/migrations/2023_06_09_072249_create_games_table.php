@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('console');
             $table->string('prijs');
             $table->string('image')->nullable();
+            $table->date("uitgave_datum");
         });
     }
 
