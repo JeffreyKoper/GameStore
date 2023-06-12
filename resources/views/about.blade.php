@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<br>
   <div class="container border rounded p-4 bg-primary bg-gradient text-white">
     <h1 class="mb-4">Over GameStore</h1>
     <div class="mb-4">
@@ -28,4 +29,5 @@
       </ul>
       
   </div>
+  <br>
 @endsection

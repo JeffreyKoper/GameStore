@@ -204,7 +204,7 @@ class GameSeeder extends Seeder
                 'console' => "Nintendo Switch",
                 'prijs' => "14,99",
                 'image' => "storage/Images/hollow_knight.jpg",
-                'beoordeling' => 5,
+                'beoordeling' => 3,
                 'uitgave_datum' => ("2017-02-24")
             ]
         
