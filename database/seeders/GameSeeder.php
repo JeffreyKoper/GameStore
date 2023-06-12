@@ -19,6 +19,7 @@ class GameSeeder extends Seeder
                 'console'           => "Playstation 4",
                 'prijs'             => "60.00",
                 'image'             => "storage/Images/Gta_5.jpg",
+                'beoordeling'       => 5,
                 'uitgave_datum'     => ('2013-09-17')
             ],
             [
@@ -26,6 +27,7 @@ class GameSeeder extends Seeder
                 'console'           => "Playstation 4",
                 'prijs'             => "15.00",
                 'image'             => "storage/Images/Security.jpg",
+                'beoordeling'       => 2,
                 'uitgave_datum'     => ('2022-03-15')
             ],
             [
@@ -33,6 +35,7 @@ class GameSeeder extends Seeder
                 'console'           => "Nintendo Switch",
                 'prijs'             => "70.00",
                 'image'             => "storage/Images/Zelda_TotK.jpg",
+                'beoordeling'       => 5,
                 'uitgave_datum'     => ('2023-05-12')
             ],
             [
@@ -40,6 +43,7 @@ class GameSeeder extends Seeder
                 'console'           => "Nintendo Switch",
                 'prijs'             => "50.00",
                 'image'             => "storage/Images/Mario_Kart.jpg",
+                'beoordeling'       => 4,
                 'uitgave_datum'     => ('2014-05-29')
             ],
             [
@@ -47,6 +51,7 @@ class GameSeeder extends Seeder
                 'console'           => "Playstation 5",
                 'prijs'             => "35.00",
                 'image'             => "storage/Images/Spider_man.jpg",
+                'beoordeling'       => 4,
                 'uitgave_datum'     => ('2020-11-12')
             ],
             [
@@ -54,6 +59,7 @@ class GameSeeder extends Seeder
                 'console'           => "Xbox Series X, Xbox one",
                 'prijs'             => "100.00",
                 'image'             => "storage/Images/Elden.jpg",
+                'beoordeling'       => 5,
                 'uitgave_datum'     => ('2022-02-25')
             ],
             [
@@ -61,6 +67,7 @@ class GameSeeder extends Seeder
                 'console'           => "Playstation 5",
                 'prijs'             => "47.99",
                 'image'             => "storage/Images/Resident.jpg",
+                'beoordeling'       => 5,
                 'uitgave_datum'     => ('2023-03-24')
             ],
         ];

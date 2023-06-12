@@ -13,6 +13,14 @@
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">{{$item->titel}}</h5>
+                                <!-- product beoordeling -->
+                                <h6 class="fw-bolder">
+                                    <div>
+                                        @for ($i = 1; $i <= $item->beoordeling; $i++)
+                                        <i class="bi-star-fill text-warning"></i>
+                                        @endfor
+                                    </div>
+                                </h6>
                                 <!-- product console -->
                                 <h6 class="fw-bolder">{{$item->console}}</h6>
                                 <!-- release datum -->
