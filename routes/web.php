@@ -20,3 +20,7 @@ Route::get('/about', function () {
 })->name('about');
 Route::get('/winkel', [GameController::class, 'AllGames'])->name("allgames");
 Route::get('/winkel/uitgave', [GameController::class, 'releaseDate'])->name("release");
+Route::get('/winkel/beoordeling', [GameController::class, 'rating'])->name("rating");
+Route::get('/winkelwagen', function(){
+    return view('winkelwagen/index');
+})->name("winkelwagen");

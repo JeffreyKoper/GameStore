@@ -20,6 +20,11 @@ class GameController extends Controller
     public function releaseDate()
     {
       $data = Games::orderBy('uitgave_datum', 'desc')->get();
-    return view('index', ['data' => $data]);
+      return view('index', ['data' => $data]);
+    }
+    public function rating()
+    {
+      $data = Games::orderBy('beoordeling', 'desc')->get();
+      return view('index', ['data' => $data]);
     }
 }

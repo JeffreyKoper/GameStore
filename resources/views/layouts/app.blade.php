@@ -28,7 +28,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="{{route('allgames')}}">Alle Games</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Best beoordeelde games</a></li>
+                                <li><a class="dropdown-item" href="{{route('rating')}}">Best beoordeelde games</a></li>
                                 <li><a class="dropdown-item" href="{{route('release')}}">Meest recent uitgebracht</a></li>
                             </ul>
                         </li>
