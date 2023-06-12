@@ -14,6 +14,7 @@
         <link href="{{asset('css/styles.css')}}" rel="stylesheet" />
     </head>
     <body>
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
@@ -32,7 +33,31 @@
                                 <li><a class="dropdown-item" href="{{route('release')}}">Meest recent uitgebracht</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                                {{ __('Dashboard') }}
+                            </x-responsive-nav-link>
+                        </li>
+                        <li class="nav-item">
+                            <x-responsive-nav-link :href="route('profile.edit')">
+                                {{ __('Profile') }}
+                            </x-responsive-nav-link>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Authentication -->
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+
+                                <x-responsive-nav-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
+                                    {{ __('Log Out') }}
+                                </x-responsive-nav-link>
+                            </form>
+                        </li>
                     </ul>
+                    <!-- Responsive Navigation Menu -->
+                    
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
                             <a href="{{route('winkelwagen')}}" class="link-secondary"><i class="bi-cart-fill me-1"></i>
