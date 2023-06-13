@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titel')->unique();;
             $table->string('console');
-            $table->string('prijs');
+            $table->integer('prijs');
             $table->string('image')->nullable();
             $table->integer("beoordeling");
             $table->date("uitgave_datum");

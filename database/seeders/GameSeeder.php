@@ -17,7 +17,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "GTA 5: Premium Edition",
                 'console'           => "Playstation 4",
-                'prijs'             => "60.00",
+                'prijs'             => 60,
                 'image'             => "storage/Images/Gta_5.jpg",
                 'beoordeling'       => 5,
                 'uitgave_datum'     => ('2013-09-17')
@@ -25,7 +25,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "Five Nights at Freddy's: Security Breach",
                 'console'           => "Playstation 4",
-                'prijs'             => "15.00",
+                'prijs'             => 15,
                 'image'             => "storage/Images/Security.jpg",
                 'beoordeling'       => 2,
                 'uitgave_datum'     => ('2022-03-15')
@@ -33,7 +33,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "The Legend of Zelda: Tears of the Kingdom",
                 'console'           => "Nintendo Switch",
-                'prijs'             => "70.00",
+                'prijs'             => 70,
                 'image'             => "storage/Images/Zelda_TotK.jpg",
                 'beoordeling'       => 5,
                 'uitgave_datum'     => ('2023-05-12')
@@ -41,7 +41,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "Mario Kart 8 Deluxe",
                 'console'           => "Nintendo Switch",
-                'prijs'             => "50.00",
+                'prijs'             => 50,
                 'image'             => "storage/Images/Mario_Kart.jpg",
                 'beoordeling'       => 4,
                 'uitgave_datum'     => ('2014-05-29')
@@ -49,7 +49,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "Spider-Man: Miles Morales",
                 'console'           => "Playstation 5",
-                'prijs'             => "35.00",
+                'prijs'             => 35,
                 'image'             => "storage/Images/Spider_man.jpg",
                 'beoordeling'       => 4,
                 'uitgave_datum'     => ('2020-11-12')
@@ -57,7 +57,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "Elden Ring",
                 'console'           => "Xbox Series X, Xbox one",
-                'prijs'             => "100.00",
+                'prijs'             => 100,
                 'image'             => "storage/Images/Elden.jpg",
                 'beoordeling'       => 5,
                 'uitgave_datum'     => ('2022-02-25')
@@ -65,7 +65,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "Resident Evil 4",
                 'console'           => "Playstation 5",
-                'prijs'             => "47.99",
+                'prijs'             => 48,
                 'image'             => "storage/Images/Resident.jpg",
                 'beoordeling'       => 5,
                 'uitgave_datum'     => ('2023-03-24')
@@ -73,7 +73,7 @@ class GameSeeder extends Seeder
             [
                 'titel'             => "The Last of Us Part II",
                 'console'           => "PlayStation 4",
-                'prijs'             => "69.99",
+                'prijs'             => 70,
                 'image'             => "storage/Images/Last_of_Us_Part_II.jpg",
                 'beoordeling'       => 5,
                 'uitgave_datum'     => ("2020-06-10"),
@@ -81,7 +81,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "The Witcher 3: Wild Hunt",
                 'console' => "PlayStation 4",
-                'prijs' => "29,99",
+                'prijs' => 30,
                 'image' => "storage/Images/the_witcher_3.jpg",
                 'beoordeling' => 4,
                 'uitgave_datum' => ("2015-05-19")
@@ -90,7 +90,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Red Dead Redemption 2",
                 'console' => "Xbox One",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/red_dead_redemption_2.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2018-10-26")
@@ -98,7 +98,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "The Legend of Zelda: Breath of the Wild",
                 'console' => "Nintendo Switch",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/breath_of_the_wild.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2017-03-03"),
@@ -106,7 +106,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "God of War",
                 'console' => "PlayStation 4",
-                'prijs' => "39,99",
+                'prijs' => 40,
                 'image' => "storage/Images/god_of_war.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2018-04-20")
@@ -114,7 +114,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Assassin's Creed Valhalla",
                 'console' => "PlayStation 5",
-                'prijs' => "69,99",
+                'prijs' => 70,
                 'image' => "storage/Images/assassins_creed_valhalla.jpg",
                 'beoordeling' => 4,
                 'uitgave_datum' => ("2020-11-10")
@@ -122,7 +122,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Call of Duty: Black Ops Cold War",
                 'console' => "Xbox Series X",
-                'prijs' => "69,99",
+                'prijs' => 70,
                 'image' => "storage/Images/black_ops_cold_war.jpg",
                 'beoordeling' => 4,
                 'uitgave_datum' => ("2020-11-13")
@@ -130,7 +130,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "FIFA 22",
                 'console' => "PlayStation 5",
-                'prijs' => "69,99",
+                'prijs' => 70,
                 'image' => "storage/Images/fifa_22.jpg",
                 'beoordeling' => 4,
                 'uitgave_datum' => ("2021-10-01")
@@ -138,7 +138,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Cyberpunk 2077",
                 'console' => "Xbox series X, S",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/cyberpunk_2077.jpg",
                 'beoordeling' => 3,
                 'uitgave_datum' => ("2020-12-10")
@@ -146,7 +146,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Animal Crossing: New Horizons",
                 'console' => "Nintendo Switch",
-                'prijs' => "49,99",
+                'prijs' => 50,
                 'image' => "storage/Images/animal_crossing_new_horizons.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2020-03-20")
@@ -154,7 +154,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Hades",
                 'console' => "Nintendo Switch",
-                'prijs' => "24,99",
+                'prijs' => 25,
                 'image' => "storage/Images/hades.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2020-09-17")
@@ -162,7 +162,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Monster Hunter Rise",
                 'console' => "Nintendo Switch",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/monster_hunter_rise.jpg",
                 'beoordeling' => 4,
                 'uitgave_datum' => ("2021-03-26")
@@ -170,7 +170,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Ghost of Tsushima",
                 'console' => "PlayStation 4",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/ghost_of_tsushima.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2020-07-17")
@@ -178,7 +178,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Resident Evil 3",
                 'console' => "PlayStation 4",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/resident_evil_3.jpg",
                 'beoordeling' => 4,
                 'uitgave_datum' => ("2020-04-03")
@@ -186,7 +186,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Super Smash Bros. Ultimate",
                 'console' => "Nintendo Switch",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/super_smash_bros_ultimate.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2018-12-07")
@@ -194,7 +194,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Final Fantasy VII Remake",
                 'console' => "PlayStation 4",
-                'prijs' => "59,99",
+                'prijs' => 60,
                 'image' => "storage/Images/final_fantasy_vii_remake.jpg",
                 'beoordeling' => 5,
                 'uitgave_datum' => ("2020-04-10")
@@ -202,7 +202,7 @@ class GameSeeder extends Seeder
             [
                 'titel' => "Hollow Knight",
                 'console' => "Nintendo Switch",
-                'prijs' => "14,99",
+                'prijs' => 15,
                 'image' => "storage/Images/hollow_knight.jpg",
                 'beoordeling' => 3,
                 'uitgave_datum' => ("2017-02-24")

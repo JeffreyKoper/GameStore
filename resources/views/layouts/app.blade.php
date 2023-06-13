@@ -33,11 +33,13 @@
                                 <li><a class="dropdown-item" href="{{route('release')}}">Meest recent uitgebracht</a></li>
                             </ul>
                         </li>
+                        
                         <li class="nav-item">
                             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                                 {{ __('Dashboard') }}
                             </x-responsive-nav-link>
                         </li>
+                        @auth
                         <li class="nav-item">
                             <x-responsive-nav-link :href="route('profile.edit')">
                                 {{ __('Profile') }}
@@ -55,6 +57,12 @@
                                 </x-responsive-nav-link>
                             </form>
                         </li>
+                        @endauth
+                        @guest
+                        <li class="nav-item">
+                            <div class="text-center"><x-responsive-nav-link :href="route('login')">inloggen </x-responsive-nav-link> </div>
+                        </li>
+                        @endguest
                     </ul>
                     <!-- Responsive Navigation Menu -->
                     

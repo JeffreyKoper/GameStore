@@ -26,7 +26,7 @@
                                 <!-- release datum -->
                                 <h6 class="fw-bolder">uitgebracht op: {{$item->uitgave_datum}}</h6>
                                 <!-- Product price-->   
-                                ${{$item->prijs}}
+                                ${{$item->prijs}}.00
                             </div>
                         </div>
                         <!-- Product actions-->

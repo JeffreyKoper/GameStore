@@ -16,12 +16,15 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [GameController::class, 'index'], [UserController::class, 'index'])->name('home');
+Route::get('/', [GameController::class, 'index'])->name('home');
+
 Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-
+Route::get('/winkel', [GameController::class, 'AllGames'])->name("allgames");
+    Route::get('/winkel/uitgave', [GameController::class, 'releaseDate'])->name("release");
+    Route::get('/winkel/beoordeling', [GameController::class, 'rating'])->name("rating");
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -32,10 +35,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    Route::get('/winkel', [GameController::class, 'AllGames'])->name("allgames");
-    Route::get('/winkel/uitgave', [GameController::class, 'releaseDate'])->name("release");
-    Route::get('/winkel/beoordeling', [GameController::class, 'rating'])->name("rating");
     Route::get('/winkelwagen', function(){
         return view('winkelwagen/index');
     })->name("winkelwagen");

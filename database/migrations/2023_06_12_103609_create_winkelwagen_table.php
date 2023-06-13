@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('game_id')->references('id')->on('games');
+            $table->boolean('isBetaald')->default(false);
             $table->timestamps();
         });
     }
