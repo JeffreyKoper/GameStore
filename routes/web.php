@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GameController;    
+use App\Http\Controllers\GameController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\GameController;
 |
 */
 
-Route::get('/', [GameController::class, 'index'])->name('home');
+Route::get('/', [GameController::class, 'index'], [UserController::class, 'index'])->name('home');
 Route::get('/about', function () {
     return view('about');
 })->name('about');
@@ -25,6 +26,7 @@ Route::get('/about', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

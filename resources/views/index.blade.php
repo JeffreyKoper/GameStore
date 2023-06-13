@@ -31,7 +31,12 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            @guest
                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{{route('login')}}">Log in om te bestellen</a></div>
+                            @endguest
+                            @auth
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">Toevoegen aan winkelwagen</a></div>
+                            @endauth
                         </div>
                     </div>
                 </div>
