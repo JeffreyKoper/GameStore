@@ -35,7 +35,18 @@
                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{{route('login')}}">Log in om te bestellen</a></div>
                             @endguest
                             @auth
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="">Toevoegen aan winkelwagen</a></div>
+                                <!--Formulier hier-->
+                                <form method="POST" action="{{route('game.toevoegen')}}">
+                                    @csrf <!--Voeg een CSRF-token toe om de beveiliging te waarborgen-->
+                                    <!-- hidden input  voor de game Id-->
+                                    <!--Tekstvak voor getallen-->
+                                    <input class="text-center col-sm-5 col-form-label" type="number" name="getal" placeholder="Aantal" required>
+                                    <input type="hidden" name="game_id" value="{{$item->id}}">
+                                    <input type="hidden" name="totaal_prijs" value="{{$item->prijs}}">
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-outline-dark mt-auto">Toevoegen aan winkelwagen</button>
+                                    </div>
+                                </form>
                             @endauth
                         </div>
                     </div>

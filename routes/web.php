@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WinkelwagenController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +40,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/winkelwagen', function(){
         return view('winkelwagen/index');
     })->name("winkelwagen");
+    Route::post('/winkelwagen', [WinkelwagenController::class, 'toevoegen'])->name('game.toevoegen');
+    Route::get('/winkelwagen', [WinkelwagenController::class, 'show'])->name("game.show");
+    Route::get('/succes', function (){
+        return view('winkelwagen/besteld');
+    })->name('succes');
+    Route::delete('/winkelwagens', [WinkelwagenController::class, 'destroy'])->name('winkelwagens.destroy');
 });
 
 require __DIR__.'/auth.php';

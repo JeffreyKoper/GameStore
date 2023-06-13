@@ -58,37 +58,28 @@
                             </form>
                         </li>
                         @endauth
-                        @guest
-                        <li class="nav-item">
-                            <div class="text-center"><x-responsive-nav-link :href="route('login')">inloggen </x-responsive-nav-link> </div>
-                        </li>
-                        @endguest
-                    </ul>
-                    <!-- Responsive Navigation Menu -->
-                    
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <a href="" class="link-secondary"><i class="bi-cart-fill me-1"></i>
-                            Winkelwagen</a>
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
+                        <form class="d-flex">
+                            <button class="btn btn-outline-dark" type="submit">
+                                <a href="" class="link-secondary"><i class="bi-cart-fill me-1"></i>
+                                Winkelwagen</a>
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-primary bg-gradient py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">De nieuwste games direct verkrijgbaar!</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">*Vertraging niet meeberekent.</p>
+            </nav>
+            <!-- Header-->
+            <header class="bg-primary bg-gradient py-5">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="text-center text-white">
+                        <h1 class="display-2 fw-bolder">Dank u wel voor het bestellen bij GameStore! uw bestelling is doorgenmomen en zal binnen de kommende week aankomen. Veel speel plezier!</h1>
+                    </div>
                 </div>
-            </div>
-        </header>
-    
-        @yield('content')
+            </header>
         
-        <!-- Footer-->
+            @yield('content')
+
+             <!-- Footer-->
         <footer class="py-5 bg-primary bg-gradient">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Game Store 2023</p></div>
         </footer>
