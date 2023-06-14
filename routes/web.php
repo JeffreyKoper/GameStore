@@ -45,7 +45,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/succes', function (){
         return view('winkelwagen/besteld');
     })->name('succes');
-    Route::delete('/winkelwagens', [WinkelwagenController::class, 'destroy'])->name('winkelwagens.destroy');
+    Route::post('/succes', [WinkelwagenController::class, 'voltooien'])->name('winkel.voltooi');
 });
 
 require __DIR__.'/auth.php';

@@ -40,18 +40,28 @@ class WinkelwagenController extends Controller
         $total = 0;
         $totalPrice = 0;
         foreach ($cart as $item) {
+            if($item->isBetaald == 0)
             $item->total = $item->totaal_prijs * $item->aantal;
             $totalPrice += $item->total;
         }
         //collection sum function
         return view('winkelwagen.index', ['cart' => $cart, 'totalPrice' => $totalPrice]);
     }
-    public function destroy()
+    public function voltooien(Request $request)
     {
+        $validatedData = $request->validate([
+            'isBetaald' => 'numeric',
+        ]);
         $userId = auth()->user()->id;
-        Winkelwagens::where('user_id', $userId)->delete();
+        $bestellingen = Winkelwagens::where('user_id', $userId)->get();
+
+        foreach ($bestellingen as $bestelling) {
+            $bestelling->isBetaald = $validatedData['isBetaald'];
+            $bestelling->save();
+        }
 
         // Redirect or return a response
-        return redirect()->route('winkelwagen.besteld');
+        return redirect()->route('winkel.voltooi');
     }
+
 }

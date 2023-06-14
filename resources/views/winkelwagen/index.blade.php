@@ -6,18 +6,19 @@
   
   <div id="cart" class="bg-dark bg-gradient p-3">
     @foreach ($cart as $carts)
-      <p>Game: {{$carts->game->titel}}</p>
-      <p>Aantal: {{$carts->aantal}}</p>
-      <p>Prijs: ${{$carts->total}}</p>
-    @endforeach
-    <h1>Totaal prijs: ${{$totalPrice}}</h1>
+    @if($carts->isBetaald == 0)
+        <p>Game: {{$carts->game->titel}}</p>
+        <p>Aantal: {{$carts->aantal}}</p>
+        <p>Prijs: ${{$carts->total}}</p>
+        @endif
+        @endforeach
+        <h1>Totaal prijs: ${{$totalPrice}}</h1>
   </div>
-  <form action="{{ route('winkelwagens.destroy') }}" method="POST">
-    @csrf
-    @method('DELETE')
-    <button type="button" class="btn btn-dark mt-3" >Afrekenen</button>
+  <form method="POST" action="{{route('winkel.voltooi')}}">
+    @csrf <!--Voeg een CSRF-token toe om de beveiliging te waarborgen-->
+    <input type="hidden" name="isBetaald" value="1">
+    <button type="submit" class="btn btn-dark mt-3" >Afrekenen</button>
   </form>
-</div>
 <br>
 <br>
 <br>

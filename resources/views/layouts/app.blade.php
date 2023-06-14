@@ -63,7 +63,7 @@
                             <div class="text-center"><x-responsive-nav-link :href="route('login')">inloggen </x-responsive-nav-link> </div>
                         </li>
                         <li class="nav-item">
-                            <div class="text-center"><x-responsive-nav-link :href="route('register')">Registeren </x-responsive-nav-link> </div>
+                            <div class="text-center"><x-responsive-nav-link :href="route('register')">Registeren </x-responsive-nav-link></div>
                         </li>
                         @endguest
                     </ul>
@@ -73,7 +73,6 @@
                         <button class="btn btn-outline-dark" type="submit">
                             <a href="" class="link-secondary"><i class="bi-cart-fill me-1"></i>
                             Winkelwagen</a>
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
                 </div>
