@@ -62,6 +62,9 @@
                         <li class="nav-item">
                             <div class="text-center"><x-responsive-nav-link :href="route('login')">inloggen </x-responsive-nav-link> </div>
                         </li>
+                        <li class="nav-item">
+                            <div class="text-center"><x-responsive-nav-link :href="route('register')">Registeren </x-responsive-nav-link> </div>
+                        </li>
                         @endguest
                     </ul>
                     <!-- Responsive Navigation Menu -->

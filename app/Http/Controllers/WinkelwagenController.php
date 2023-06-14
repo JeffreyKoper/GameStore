@@ -37,8 +37,12 @@ class WinkelwagenController extends Controller
     {
         $userId = auth()->user()->id;
         $cart = Winkelwagens::where('user_id', $userId)->get();
-        $totalPrice = $cart->sum('totaal_prijs');
-
+        $total = 0;
+        $totalPrice = 0;
+        foreach ($cart as $item) {
+            $item->total = $item->totaal_prijs * $item->aantal;
+            $totalPrice += $item->total;
+        }
         //collection sum function
         return view('winkelwagen.index', ['cart' => $cart, 'totalPrice' => $totalPrice]);
     }

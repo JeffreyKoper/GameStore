@@ -8,7 +8,7 @@
     @foreach ($cart as $carts)
       <p>Game: {{$carts->game->titel}}</p>
       <p>Aantal: {{$carts->aantal}}</p>
-      <p>Prijs: ${{$carts->totaal_prijs}}</p>
+      <p>Prijs: ${{$carts->total}}</p>
     @endforeach
     <h1>Totaal prijs: ${{$totalPrice}}</h1>
   </div>
