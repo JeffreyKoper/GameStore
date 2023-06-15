@@ -10,6 +10,7 @@
 window.addEventListener("DOMContentLoaded", (event) => {
     const message = document.getElementById("header_message");
     const texts = [
+        "De nieuwste games direct verkrijgbaar!",
         "Haal al u games hier!",
         "De goedkoopste games in Nederland!",
         "Welkom!",

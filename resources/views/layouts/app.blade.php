@@ -82,9 +82,8 @@
         <header class="bg-primary bg-gradient py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">De nieuwste games direct verkrijgbaar!</h1>
+                    <h1 class="display-4 fw-bolder" id="header_message">Welkom!</h1>
                     <p class="lead fw-normal text-white-50 mb-0">*Vertraging niet meeberekent.</p>
-                    <p class="display-5 fw-bolder" id="header_message">Welkom!</p>
                 </div>
             </div>
         </header>
