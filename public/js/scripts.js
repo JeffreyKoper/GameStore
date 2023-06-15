@@ -8,6 +8,22 @@
 //
 
 window.addEventListener("DOMContentLoaded", (event) => {
+    const message = document.getElementById("header_message");
+    const texts = [
+        "Haal al u games hier!",
+        "De goedkoopste games in Nederland!",
+        "Welkom!",
+    ]; // Add more texts if needed
+
+    let index = 0;
+
+    function changeText() {
+        message.innerHTML = texts[index];
+        index = (index + 1) % texts.length;
+    }
+
+    setInterval(changeText, 7000); // 10,000 milliseconds = 10 seconds
+
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector("#mainNav");
     if (mainNav) {
