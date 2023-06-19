@@ -71,7 +71,7 @@
                     
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
-                            <a href="" class="link-secondary"><i class="bi-cart-fill me-1"></i>
+                            <a href="{{route('game.show')}}" class="link-secondary"><i class="bi-cart-fill me-1"></i>
                             Winkelwagen</a>
                         </button>
                     </form>
