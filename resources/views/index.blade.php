@@ -40,7 +40,7 @@
                                     @csrf <!--Voeg een CSRF-token toe om de beveiliging te waarborgen-->
                                     <!-- hidden input  voor de game Id-->
                                     <!--Tekstvak voor getallen-->
-                                    <input class="text-center col-sm-4 col-form-label" type="number" name="getal" placeholder="Aantal" required>
+                                    <input class="text-center col-sm-4 col-form-label" type="number" name="getal" placeholder="Aantal" min="1" required>
                                     <input type="hidden" name="game_id" value="{{$item->id}}">
                                     <input type="hidden" name="totaal_prijs" value="{{$item->prijs}}">
                                     <div class="text-center">
